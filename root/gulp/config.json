@@ -1,0 +1,33 @@
+{
+    "server": {
+        "root": "public",
+        "port": "8000"
+    },
+    "styles": {
+        "src": "app/assets/sass/app.scss",
+        "dest": "public/assets/css"
+    },
+    "scripts": {
+        "src": "app/assets/js/app.js",
+        "dest": "public/assets/js"
+    },
+    "images": {
+        "src": "./app/assets/img/*",
+        "dest": "./public/assets/img/"
+    },
+    "clean": {
+        "files": [
+            "./public/**/*",
+            "!./public/CNAME"
+        ]
+    },
+    "watch": {
+        "app/assets/sass/**/*.scss" : ["styles"],
+        "app/assets/js/**/*.js": ["scripts"],
+        "app/pages/**/*.html": ["nunjucks"],
+        "app/templates/**/*.html": ["nunjucks"]
+    },
+    "surge": {
+        "project": "./public"
+    }
+}

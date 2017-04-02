@@ -1,0 +1,8 @@
+{
+  "name": "{%= name %}",
+  "description": "{%= description %}",
+  "version": "{%= version %}",
+  "dependencies": {
+    "jjgrainger-backpack": "*"
+  }
+}
